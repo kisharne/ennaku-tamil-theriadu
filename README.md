@@ -1,2 +1,2 @@
 # Ennaku Tamil Theriadu
-### Language Learning Resourse
+#### Language Learning Resource
