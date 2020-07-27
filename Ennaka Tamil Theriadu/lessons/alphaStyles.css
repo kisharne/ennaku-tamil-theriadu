@@ -1,0 +1,160 @@
+/* Master styles */
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Inconsolata', monospace;
+
+}
+
+/*Nav styles*/
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    margin-bottom: 50px;
+}
+
+.right-side {
+    display: flex;
+    padding: 38px;
+}
+
+.nav-wrapper > .right-side > div {
+    margin-right: 20px;
+}
+
+.left-side {
+    margin-right: 20px;
+    padding: 20px;
+}
+.nav-wrapper > .left-side > div {  
+    font-size: 48px; 
+    padding-left: 30px;
+    color: white;
+}
+.nav-wrapper > .left-side > div > a { 
+    color:white; 
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.nav-link-wrapper  a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid white;
+}
+
+.nav-link-wrapper a:hover {
+    color: white;
+}
+
+.nav-link-wrapper a:visited {
+    border-bottom: 1px solid white;
+}
+
+/* Content */
+.container > a {
+    margin: 140px;
+    text-decoration: none;
+    color: black;
+}
+.container > h1 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+.container > p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+.container > a:hover {
+    color: #ff9933;
+}
+.container > table {
+    margin-top: 50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container > table > tbody > th {
+margin-left: 200px;
+}
+.container > table,td,tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 30px;
+}
+.container >table > tbody > tr > td > a{
+    text-decoration: none;
+    color: black;
+}
+.container > .day-plan  {
+    margin-left: 120px;
+}
+
+.container > .day-plan > a > h4 {
+    font-size: 18px;
+    border-bottom: 1px solid black;
+    width: 90%;
+    margin-top: 70px;
+}
+
+.container > .day-plan > a > .alpha-buttons{
+    width: 90%;
+    margin-right: auto;
+    margin-left: 0;
+    margin-bottom: 10px;
+    justify-content: center;
+    padding: 10px 20px;
+    display: flex;
+}
+canvas {
+    margin-left: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    border: 1px solid black;
+}
+.container > .day-plan > a > .alpha-buttons > button{
+    display: inline-block;
+    height: 70px;
+    width: 100px;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color:#ff9933;
+    font-weight: 700;
+    padding: 10px 20px;
+    margin: 2px;
+    margin-top: 100px;
+}
+    .container > .day-plan > a > .alpha-buttons > button:hover{
+        color: black;
+    }
+
+/*Footer style*/
+
+.footer-wrapper {
+    color: white;
+    background-color: black;
+    margin: 0px;
+    text-align: center;
+    padding: 38px;
+}

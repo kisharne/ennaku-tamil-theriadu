@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Ennaka Tamil Theriadu</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.sound.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="parallax.js-1.5.0/parallax.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">  
+  </head>
+
+  <body>
+    <!--<script src="sketch.js"></script>-->
+    <div class="container">
+      <div class="nav-wrapper">
+
+        <div class="left-side">
+          <div class="icon-wrapper">
+            <a href="index.html">அ</a>
+          </div>
+        </div>   
+        
+        <div class="right-side">
+          <div class="nav-link-wrapper">
+            <a href="about.html">About</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="lessons.html">Lessons</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="stories.html">Stories</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-wrapper">
+
+        <div class="landing-image">
+          <div class="img-background" data-parallax="scroll" data-z-index="1" data-image-src="images/srilanka.jpg"></div>
+        </div>
+
+        <div class="img-text-wrapper">
+          <div class="title-wrapper">
+            <h1>Ennaka Tamil Theriadu</h1>
+          </div>
+          <div class="subtitle">
+            from one uncultured tamil to another.
+          </div>    
+        </div>
+      </div>
+
+      <div class="continued-text">
+        LEARN TAMIL WITH ME!
+      </div>
+
+      <div class="footer-wrapper">
+        &copy 2020 Kisharne Vasikaran
+      </div>
+    </div>
+  </body>
+
+  <script>
+    const landingImg = document.querySelectorAll('.content-wrapper')
+
+    landingImg.forEach(landingImg => {
+      landingImg.addEventListener('mouseover', () => {
+        console.log(landingImg.childNodes[1].classList);
+        landingImg.childNodes[1].classList.add('img-darken');
+      })
+
+      landingImg.addEventListener('mouseout', () => {
+        landingImg.childNodes[1].classList.remove('img-darken');
+      })
+    })
+  </script>
+</html>

@@ -1,0 +1,132 @@
+/* Master styles */
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Inconsolata', monospace;
+
+}
+
+/*Nav styles*/
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.right-side {
+    display: flex;
+    padding: 38px;
+}
+
+.nav-wrapper > .right-side > div {
+    margin-right: 20px;
+}
+
+.left-side {
+    margin-right: 20px;
+    padding: 20px;
+}
+.nav-wrapper > .left-side > div {  
+    font-size: 48px; 
+    padding-left: 30px;
+    color: white;
+}
+.nav-wrapper > .left-side > div > a { 
+    color:white; 
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.nav-link-wrapper  a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid white;
+}
+
+.nav-link-wrapper a:hover {
+    color: white;
+}
+
+.nav-link-wrapper a:visited {
+    border-bottom: 1px solid white;
+}
+
+/*Content styles*/
+
+.content-wrapper {
+    position: relative;
+}
+.img-background {
+    height: 800px;
+    width: 100%;
+    background: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 3;
+}
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    text-align: center;
+    padding-left: 60px;
+    z-index: 2;
+
+}
+
+.title-wrapper {
+    font-size: 64px;
+    color: white;
+}
+
+.img-text-wrapper .subtitle {
+transition: 1s;
+color: transparent;
+font-size: 48px;
+}
+
+.img-text-wrapper:hover .subtitle {
+    color:#ff9933;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(30%);
+}
+
+.continued-text {
+    color: white;
+    background-color: black;
+    margin: 0px;
+    text-align: left;
+    font-size: 110px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Footer style*/
+
+.footer-wrapper {
+    color: white;
+    background-color: black;
+    margin: 0px;
+    text-align: center;
+    padding: 38px;
+}

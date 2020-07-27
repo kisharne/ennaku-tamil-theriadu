@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ennaka Tamil Theriadu | Alphabets </title>
+    <link rel="stylesheet" href="alphaStyles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Roboto:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.min.js"></script>
+    <script type="text/javascript" src="sketches/sketch.js"></script>
+    <!-- <script type="text/javascript" src="sketches/sketch2.js"></script> -->
+</head>
+
+<body>
+    <audio id="ana" src="audio/ana.mp3" type="audio/mp3"></audio>
+    <audio id="avana" src="audio/avana.mp3" type="audio/mp3"></audio>
+    <audio id="ina" src="audio/ina.mp3" type="audio/mp3"></audio>
+    <audio id="iina" src="audio/iina.mp3" type="audio/mp3"></audio>
+    <audio id="una" src="audio/una.mp3" type="audio/mp3"></audio>
+    <audio id="uvana" src="audio/uvana.mp3" type="audio/mp3"></audio>
+    <audio id="ena" src="audio/ena.mp3" type="audio/mp3"></audio>
+    <audio id="eena" src="audio/eena.mp3" type="audio/mp3"></audio>
+    <audio id="aina" src="audio/aina.mp3" type="audio/mp3"></audio>
+    <audio id="ona" src="audio/ona.mp3" type="audio/mp3"></audio>
+    <audio id="ovana" src="audio/ovana.mp3" type="audio/mp3"></audio>
+    <audio id="ouvana" src="audio/ouvana.mp3" type="audio/mp3"></audio>
+    <script>
+        function playAudio(idName) {
+            var x = document.getElementById(idName);
+            x.play();
+        } 
+    </script>
+    <div class="container">
+        <div class="nav-wrapper">
+
+            <div class="left-side">
+                <div class="icon-wrapper">
+                    <a href="/index.html">அ</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="nav-link-wrapper">
+                    <a href="../about.html">About</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="../lessons.html">Lessons</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="../stories.html">Stories</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="../contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+        <a href="../lessons.html">back</a>
+        <h1>Learn the Tamil Alphabet in 23 days!</h1>
+        <p>So 246 characters huh... this can be pretty daunting, I know it was for me! Once you get the hang of the
+            little patterns you'll fly through them! Just how you'd follow a workout plan, follow this calendar and
+            integrate time for daily learnings.</p>
+        <table>
+            <tr>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+            <tr>
+                <td><a href="#day1">vowels</a></td>
+                <td><a href="#day2">conson1</a></td>
+                <td><a href="#day3">conson2</a></td>
+                <td><a href="#day4">1st row</a></td>
+                <td><a href="#day5">2nd row</a></td>
+            </tr>
+            <tr>
+                <td><a href="#day6">3rd row</a></td>
+                <td><a href="#day7">4th row</a></td>
+                <td><a href="#day8">5th row</a></td>
+                <td><a href="#day9">6th row</a></td>
+                <td><a href="#day10">7th row</a></td>
+            </tr>
+            <tr>
+                <td><a href="#day11">8th row</a></td>
+                <td><a href="#day12">9th row</a></td>
+                <td><a href="#day13">10th row</a></td>
+                <td><a href="#day14">11th row</a></td>
+                <td><a href="#day15">12th row</a></td>
+            </tr>
+            <tr>
+                <td><a href="#day16">13th row</a></td>
+                <td><a href="#day17">14th row</a></td>
+                <td><a href="#day18">15th row</a></td>
+                <td><a href="#day19">16th row</a></td>
+                <td><a href="#day20">17th row</a></td>
+            </tr>
+            <tr>
+                <td><a href="#day21">18th row</a></td>
+                <td>additionals</td>
+                <td>additionals</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <div class="day-plan">
+            <a name="day1">
+                <h4>DAY 1</h4>
+                <p>Tracing & Sounds!</p>
+                <div class="alpha-buttons">
+                    <div id="sketch-div"></div>
+                    <button class="alpha" onclick="playAudio('ana')" type="button">அ</button>
+                    <button class="alpha" onclick="playAudio('avana')" type="button">ஆ</button>
+                    <button onclick="playAudio('ina')" type="button">இ</button>
+                    <button onclick="playAudio('iina')" type="button">ஈ</button>
+                    <button onclick="playAudio('una')" type="button">உ</button>
+                    <button onclick="playAudio('uvana')" type="button">ஊ</button>
+                    <button onclick="playAudio('ena')" type="button">எ</button>
+                    <button onclick="playAudio('eena')" type="button">ஏ</button>
+                    <button onclick="playAudio('aina')" type="button">ஐ</button>
+                    <button onclick="playAudio('ona')" type="button">ஒ</button>
+                    <button onclick="playAudio('ovana')" type="button">ஓ</button>
+                    <button onclick="playAudio('ouvana')" type="button">ஒள</button>
+                </div>
+            </a>
+            <a name="day2">
+                <h4>DAY 2</h4>
+                <div class="alpha-buttons">
+                    <div id="sketch2-div"></div>
+                    <button onclick="playAudio('ana')" type="button">க்</button>
+                    <button onclick="playAudio('avana')" type="button">ங்</button>
+                    <button onclick="playAudio('ina')" type="button">ச்</button>
+                    <button onclick="playAudio('iina')" type="button">ஞ்</button>
+                    <button onclick="playAudio('una')" type="button">ட்</button>
+                    <button onclick="playAudio('uvana')" type="button">ண்</button>
+                    <button onclick="playAudio('ena')" type="button">த்</button>
+                    <button onclick="playAudio('eena')" type="button">ந்</button>
+                    <button onclick="playAudio('aina')" type="button">ப்</button>
+                </div>
+            </a>
+            <a name="day3">
+                <h4>DAY 3</h4>
+                <div class="alpha-buttons">
+                    <button onclick="playAudio('ana')" type="button">ம்</button>
+                    <button onclick="playAudio('avana')" type="button">ய்</button>
+                    <button onclick="playAudio('ina')" type="button">ர்</button>
+                    <button onclick="playAudio('iina')" type="button">ல்</button>
+                    <button onclick="playAudio('una')" type="button">வ்</button>
+                    <button onclick="playAudio('uvana')" type="button">ழ்</button>
+                    <button onclick="playAudio('ena')" type="button">ள்</button>
+                    <button onclick="playAudio('eena')" type="button">ன்</button>
+                    <button onclick="playAudio('aina')" type="button">ற்</button>
+                </div>
+            </a>
+            <a name="day4">
+                <h4>DAY 4</h4>
+                <div class="alpha-buttons">
+                    <button onclick="playAudio('ana')" type="button">க</button>
+                    <button onclick="playAudio('avana')" type="button">கா</button>
+                    <button onclick="playAudio('ina')" type="button">கி</button>
+                    <button onclick="playAudio('iina')" type="button">கீ</button>
+                    <button onclick="playAudio('una')" type="button">கு</button>
+                    <button onclick="playAudio('uvana')" type="button">கூ</button>
+                    <button onclick="playAudio('ena')" type="button">கை</button>
+                    <button onclick="playAudio('eena')" type="button">கொ</button>
+                    <button onclick="playAudio('aina')" type="button">கோ</button>
+                    <button onclick="playAudio('aina')" type="button">கௌ</button>
+                </div>
+            </a>
+            <a name="day5">
+                <h4>DAY 5</h4>
+                <div class="alpha-buttons">
+                    <button onclick="playAudio('ana')" type="button">ங</button>
+                    <button onclick="playAudio('avana')" type="button">ஙா</button>
+                    <button onclick="playAudio('ina')" type="button">ஙி</button>
+                    <button onclick="playAudio('iina')" type="button">ஙீ</button>
+                    <button onclick="playAudio('una')" type="button">ஙு</button>
+                    <button onclick="playAudio('uvana')" type="button">ஙூ</button>
+                    <button onclick="playAudio('ena')" type="button">ஙை</button>
+                    <button onclick="playAudio('eena')" type="button">ஙொ</button>
+                    <button onclick="playAudio('aina')" type="button">ஙோ</button>
+                    <button onclick="playAudio('aina')" type="button">ஙௌ</button>
+                </div>
+            </a>
+            <a name="day6">
+                <h4>DAY 6</h4>
+                <div class="alpha-buttons">
+                    <button onclick="playAudio('ana')" type="button">ச</button>
+                    <button onclick="playAudio('avana')" type="button">சா</button>
+                    <button onclick="playAudio('ina')" type="button">சி</button>
+                    <button onclick="playAudio('iina')" type="button">சீ</button>
+                    <button onclick="playAudio('una')" type="button">சு</button>
+                    <button onclick="playAudio('uvana')" type="button">சூ</button>
+                    <button onclick="playAudio('ena')" type="button">சை</button>
+                    <button onclick="playAudio('eena')" type="button">சொ</button>
+                    <button onclick="playAudio('aina')" type="button">சோ</button>
+                    <button onclick="playAudio('aina')" type="button">சௌ</button>
+                </div>
+            </a>
+            <a name="day7">
+                <h4>DAY 7</h4>
+                <div class="alpha-buttons">
+                    <button onclick="playAudio('ana')" type="button">ஞ</button>
+                    <button onclick="playAudio('avana')" type="button">ஞா</button>
+                    <button onclick="playAudio('ina')" type="button">ஞி</button>
+                    <button onclick="playAudio('iina')" type="button">ஞீ</button>
+                    <button onclick="playAudio('una')" type="button">ஞு</button>
+                    <button onclick="playAudio('uvana')" type="button">ஞூ</button>
+                    <button onclick="playAudio('ena')" type="button">ஞை</button>
+                    <button onclick="playAudio('eena')" type="button">ஞொ</button>
+                    <button onclick="playAudio('aina')" type="button">ஞோ</button>
+                    <button onclick="playAudio('ena')" type="button">ஞௌ</button>
+                </div>
+            </a>
+            <a name="day8">
+                <h4>DAY 8</h4>
+                <div class="alpha-buttons">
+                    <button onclick="playAudio('ana')" type="button">ட</button>
+                    <button onclick="playAudio('avana')" type="button">டா</button>
+                    <button onclick="playAudio('ina')" type="button">டி</button>
+                    <button onclick="playAudio('iina')" type="button">டீ</button>
+                    <button onclick="playAudio('una')" type="button">டு</button>
+                    <button onclick="playAudio('uvana')" type="button">டூ</button>
+                    <button onclick="playAudio('ena')" type="button">டை</button>
+                    <button onclick="playAudio('eena')" type="button">டொ</button>
+                    <button onclick="playAudio('aina')" type="button">டோ</button>
+                    <button onclick="playAudio('avana')" type="button">டௌ</button>
+                </div>
+            </a>
+            <a name="day9">
+                <h4>DAY 9</h4>
+                <div class="alpha-buttons">
+                    <button onclick="playAudio('ana')" type="button">ண</button>
+                    <button onclick="playAudio('avana')" type="button">ணா</button>
+                    <button onclick="playAudio('ina')" type="button">ணி</button>
+                    <button onclick="playAudio('iina')" type="button">ணீ</button>
+                    <button onclick="playAudio('una')" type="button">ணு</button>
+                    <button onclick="playAudio('uvana')" type="button">ணூ</button>
+                    <button onclick="playAudio('ena')" type="button">ணை</button>
+                    <button onclick="playAudio('eena')" type="button">ணொ</button>
+                    <button onclick="playAudio('aina')" type="button">ணோ</button>
+                    <button onclick="playAudio('aina')" type="button">ணௌ</button>
+                </div>
+            </a>
+            <a name="day10">
+                <h4>DAY 10</h4>
+                <div class="alpha-buttons">
+                    <button onclick="playAudio('ana')" type="button">த</button>
+                    <button onclick="playAudio('avana')" type="button">தா</button>
+                    <button onclick="playAudio('ina')" type="button">தி</button>
+                    <button onclick="playAudio('iina')" type="button">தீ</button>
+                    <button onclick="playAudio('una')" type="button">து</button>
+                    <button onclick="playAudio('uvana')" type="button">தூ</button>
+                    <button onclick="playAudio('ena')" type="button">தை</button>
+                    <button onclick="playAudio('eena')" type="button">தொ</button>
+                    <button onclick="playAudio('aina')" type="button">தோ</button>
+                    <button onclick="playAudio('aina')" type="button">தௌ</button>
+                </div>
+            </a>
+            <a name="day11">
+                <h4>DAY 11</h4>
+                <div class="alpha-buttons">
+                    <button onclick="playAudio('ana')" type="button">ந</button>
+                    <button onclick="playAudio('avana')" type="button">நா</button>
+                    <button onclick="playAudio('ina')" type="button">நி</button>
+                    <button onclick="playAudio('iina')" type="button">நீ</button>
+                    <button onclick="playAudio('una')" type="button">நு</button>
+                    <button onclick="playAudio('uvana')" type="button">நூ</button>
+                    <button onclick="playAudio('ena')" type="button">நை</button>
+                    <button onclick="playAudio('eena')" type="button">நொ</button>
+                    <button onclick="playAudio('aina')" type="button">நோ</button>
+                    <button onclick="playAudio('aina')" type="button">நௌ</button>
+                </div>
+            </a>
+            <a name="day12">
+                <h4>DAY 12</h4>
+                <div class="alpha-buttons">
+                    <button onclick="playAudio('ana')" type="button">ப</button>
+                    <button onclick="playAudio('avana')" type="button">பா</button>
+                    <button onclick="playAudio('ina')" type="button">பி</button>
+                    <button onclick="playAudio('iina')" type="button">பீ</button>
+                    <button onclick="playAudio('una')" type="button">பு</button>
+                    <button onclick="playAudio('uvana')" type="button">பூ</button>
+                    <button onclick="playAudio('ena')" type="button">பை</button>
+                    <button onclick="playAudio('eena')" type="button">பொ</button>
+                    <button onclick="playAudio('aina')" type="button">போ</button>
+                    <button onclick="playAudio('ana')" type="button">பௌ</button>
+                </div>
+            </a>
+            <a name="day13">
+                <h4>DAY 13</h4>
+                <div class="alpha-buttons">
+                    <button onclick="playAudio('ana')" type="button">ம</button>
+                    <button onclick="playAudio('avana')" type="button">மா</button>
+                    <button onclick="playAudio('ina')" type="button">மி</button>
+                    <button onclick="playAudio('iina')" type="button">மீ</button>
+                    <button onclick="playAudio('una')" type="button">மு</button>
+                    <button onclick="playAudio('uvana')" type="button">மூ</button>
+                    <button onclick="playAudio('ena')" type="button">மை</button>
+                    <button onclick="playAudio('eena')" type="button">மொ</button>
+                    <button onclick="playAudio('aina')" type="button">மோ</button>
+                    <button onclick="playAudio('aina')" type="button">மௌ</button>
+                </div>
+            </a>
+            <a name="day14">
+                <h4>DAY 14</h4>
+                <div class="alpha-buttons">
+                    <button onclick="playAudio('ana')" type="button">ய</button>
+                    <button onclick="playAudio('avana')" type="button">யா</button>
+                    <button onclick="playAudio('ina')" type="button">யி</button>
+                    <button onclick="playAudio('iina')" type="button">யீ</button>
+                    <button onclick="playAudio('una')" type="button">யு</button>
+                    <button onclick="playAudio('uvana')" type="button">யூ</button>
+                    <button onclick="playAudio('ena')" type="button">யை</button>
+                    <button onclick="playAudio('eena')" type="button">யொ</button>
+                    <button onclick="playAudio('aina')" type="button">யோ</button>
+                    <button onclick="playAudio('aina')" type="button">யௌ</button>
+                </div>
+            </a>
+            <a name="day15">
+                <h4>DAY 15</h4>
+                <div class="alpha-buttons">
+                    <button onclick="playAudio('ana')" type="button">ர</button>
+                    <button onclick="playAudio('avana')" type="button">ரா</button>
+                    <button onclick="playAudio('ina')" type="button">ரி</button>
+                    <button onclick="playAudio('iina')" type="button">ரீ</button>
+                    <button onclick="playAudio('una')" type="button">ரு</button>
+                    <button onclick="playAudio('uvana')" type="button">ரூ</button>
+                    <button onclick="playAudio('ena')" type="button">ரை</button>
+                    <button onclick="playAudio('eena')" type="button">ரொ</button>
+                    <button onclick="playAudio('aina')" type="button">ரோ</button>
+                    <button onclick="playAudio('aina')" type="button">ரௌ</button>
+                </div>
+            </a>
+            <a name="day16">
+                <h4>DAY 16</h4>
+                <div class="alpha-buttons">
+                    <button onclick="playAudio('ana')" type="button">ல</button>
+                    <button onclick="playAudio('avana')" type="button">லா</button>
+                    <button onclick="playAudio('ina')" type="button">லி</button>
+                    <button onclick="playAudio('iina')" type="button">லீ</button>
+                    <button onclick="playAudio('una')" type="button">லு</button>
+                    <button onclick="playAudio('uvana')" type="button">லூ</button>
+                    <button onclick="playAudio('ena')" type="button">லை</button>
+                    <button onclick="playAudio('eena')" type="button">லொ</button>
+                    <button onclick="playAudio('aina')" type="button">லோ</button>
+                    <button onclick="playAudio('aina')" type="button">லௌ</button>
+                </div>
+            </a>
+            <a name="day17">
+                <h4>DAY 17</h4>
+                <div class="alpha-buttons">
+                    <button onclick="playAudio('ana')" type="button">வ</button>
+                    <button onclick="playAudio('avana')" type="button">வா</button>
+                    <button onclick="playAudio('ina')" type="button">வி</button>
+                    <button onclick="playAudio('iina')" type="button">வீ</button>
+                    <button onclick="playAudio('una')" type="button">வு</button>
+                    <button onclick="playAudio('uvana')" type="button">வூ</button>
+                    <button onclick="playAudio('ena')" type="button">வை</button>
+                    <button onclick="playAudio('eena')" type="button">வொ</button>
+                    <button onclick="playAudio('aina')" type="button">வோ</button>
+                    <button onclick="playAudio('aina')" type="button">வௌ</button>
+                </div>
+            </a>
+            <a name="day18">
+                <h4>DAY 18</h4>
+                <div class="alpha-buttons">
+                    <button onclick="playAudio('ana')" type="button">ழ</button>
+                    <button onclick="playAudio('avana')" type="button">ழா</button>
+                    <button onclick="playAudio('ina')" type="button">ழி</button>
+                    <button onclick="playAudio('iina')" type="button">ழீ</button>
+                    <button onclick="playAudio('una')" type="button">ழு</button>
+                    <button onclick="playAudio('uvana')" type="button">ழூ</button>
+                    <button onclick="playAudio('ena')" type="button">ழை</button>
+                    <button onclick="playAudio('eena')" type="button">ழொ</button>
+                    <button onclick="playAudio('aina')" type="button">ழோ</button>
+                    <button onclick="playAudio('aina')" type="button">ழௌ</button>
+                </div>
+            </a>
+            <a name="day19">
+                <h4>DAY 19</h4>
+                <div class="alpha-buttons">
+                    <button onclick="playAudio('ana')" type="button">ள</button>
+                    <button onclick="playAudio('avana')" type="button">ளா</button>
+                    <button onclick="playAudio('ina')" type="button">ளி</button>
+                    <button onclick="playAudio('iina')" type="button">ளீ</button>
+                    <button onclick="playAudio('una')" type="button">ளு</button>
+                    <button onclick="playAudio('uvana')" type="button">ளூ</button>
+                    <button onclick="playAudio('ena')" type="button">ளை</button>
+                    <button onclick="playAudio('eena')" type="button">ளொ</button>
+                    <button onclick="playAudio('aina')" type="button">ளோ</button>
+                    <button onclick="playAudio('aina')" type="button">ளௌ</button>
+                </div>
+            </a>
+            <a name="day20">
+                <h4>DAY 20</h4>
+                <div class="alpha-buttons">
+                    <button onclick="playAudio('ana')" type="button">ன</button>
+                    <button onclick="playAudio('avana')" type="button">னா</button>
+                    <button onclick="playAudio('ina')" type="button">னி</button>
+                    <button onclick="playAudio('iina')" type="button">னீ</button>
+                    <button onclick="playAudio('una')" type="button">னு</button>
+                    <button onclick="playAudio('uvana')" type="button">னூ</button>
+                    <button onclick="playAudio('ena')" type="button">னை</button>
+                    <button onclick="playAudio('eena')" type="button">னொ</button>
+                    <button onclick="playAudio('aina')" type="button">னோ</button>
+                    <button onclick="playAudio('aina')" type="button">னௌ</button>
+                </div>
+            </a>
+            <a name="day21">
+                <h4>DAY 21</h4>
+                <div class="alpha-buttons">
+                    <button onclick="playAudio('ana')" type="button">ற</button>
+                    <button onclick="playAudio('avana')" type="button">றா</button>
+                    <button onclick="playAudio('ina')" type="button">றி</button>
+                    <button onclick="playAudio('iina')" type="button">றீ</button>
+                    <button onclick="playAudio('una')" type="button">று</button>
+                    <button onclick="playAudio('uvana')" type="button">றூ</button>
+                    <button onclick="playAudio('ena')" type="button">றை</button>
+                    <button onclick="playAudio('eena')" type="button">றொ</button>
+                    <button onclick="playAudio('aina')" type="button">றோ</button>
+                    <button onclick="playAudio('aina')" type="button">றௌ</button>
+                </div>
+            </a>
+            <a name="day22">
+                <h4>DAY 22</h4>
+                <div class="alpha-buttons">
+                </div>
+            </a>
+            <a name="day23">
+                <h4>DAY 23</h4>
+                <div class="alpha-buttons">
+
+                </div>
+            </a>
+        </div>
+        <div class="footer-wrapper">
+            &copy 2020 Kisharne Vasikaran
+        </div>
+
+    </div>
+</body>
+
+</html>
